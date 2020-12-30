@@ -1,0 +1,6 @@
+version: '3'
+services:
+  demo:
+    image: rohitanand650/demo
+    ports:
+      - 8080:8080
