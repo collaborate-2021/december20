@@ -17,7 +17,7 @@ Run a Docker image:
 
 ##Running by docker-compose
  docker-compose up -d // -d is for detached mode in background
- docker-compose down //To stop
+ docker-compose down //To stop 
  
 ##Deploy to kubernetes
      kubectl apply -f kubernetes\demoapp.yaml
