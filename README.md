@@ -4,12 +4,22 @@
 Gradle build
     gradlew clean build
 Docker Image build    
-    docker build -f Dockerfile -t demo .
+    docker build -f Dockerfile -t rohitanand650/demo .
+Push Image 
+    Docker login:
+        docker login
+    Docker Push:    
+        docker push rohitanand650/demo
 
 ##Run:
 Run a Docker image:
     docker run -p 8083:8080 demo
  Todo: try using docker compose
+ 
+##Deploy to kubernetes
+     kubectl apply -f kubernetes\demoapp.yaml
+     kubectl apply -f kubernetes\demoservice.yaml
+
 
 ##Test an API
  Curl command
