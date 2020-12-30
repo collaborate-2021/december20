@@ -23,7 +23,6 @@ Run a Docker image:
      kubectl apply -f kubernetes\demoapp.yaml
      kubectl apply -f kubernetes\demoservice.yaml
 
-
 ##Test an API
  Curl command
      curl localhost:8083/hello
