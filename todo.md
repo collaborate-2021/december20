@@ -18,3 +18,10 @@
 * add typesafe config
 * db credentials read from config
 * create multi-part POST API endpoint (upload a file to postgres)
+
+
+
+* Write specific and formatted commit message
+  - Writing good commit messages - https://chris.beams.io/posts/git-commit/
+  - Follow [conventional commit format](https://www.conventionalcommits.org/en/v1.0.0/)
+* Semantic versioning - major.minor.patch
