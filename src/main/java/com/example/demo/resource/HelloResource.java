@@ -13,15 +13,15 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @RestController
-public class Hello {
+public class HelloResource {
     private static final Logger logger
-            = LoggerFactory.getLogger(Hello.class);
+            = LoggerFactory.getLogger(HelloResource.class);
     Counter testCounter;
     AtomicInteger testGauge;
     MeterRegistry meterRegistry;
     DistributionSummary distributionSummary;
 
-    public Hello(MeterRegistry meterRegistry) {
+    public HelloResource(MeterRegistry meterRegistry) {
         this.meterRegistry = meterRegistry;
         testCounter = meterRegistry.counter("request_count");
         testGauge = meterRegistry.gauge("request_rate", new AtomicInteger(0));
@@ -39,7 +39,7 @@ public class Hello {
     public String hello() {
         long startTime = System.currentTimeMillis();
         Timer.Sample sample = Timer.start(meterRegistry);
-        logger.info("Example log from {}", Hello.class.getSimpleName());
+        logger.info("Example log from {}", HelloResource.class.getSimpleName());
         testCounter.increment();
         testGauge.incrementAndGet();
         try {
