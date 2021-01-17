@@ -13,6 +13,8 @@
 * ship metric to prometheus/grafana
 * docker compose postgres
 * get Current time API from Postgres Database (HikariCP)
+    - dependency injection
+    - test cases - junit / mocktio 
 * add typesafe config
 * db credentials read from config
 * create multi-part POST API endpoint (upload a file to postgres)
