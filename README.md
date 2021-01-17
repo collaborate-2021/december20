@@ -68,9 +68,9 @@ Deployment
 
 * Let's say we would like to set it to use 6 CPU and 8 GB memory
    
-   `minikube config set cpus 6`
+   `minikube config set cpus `
    
-   `minikube config set memory 8192`
+   `minikube config set memory 6000`
     
     To apply above config:
    
@@ -118,5 +118,10 @@ Deployment
     
    Delete all pods 
     `kubectl delete --all pods`  
+    
+##Prometheus
+
+* Spring Boot Micrometer - https://www.mokkapps.de/blog/monitoring-spring-boot-application-with-micrometer-prometheus-and-grafana-using-custom-metrics/
+
 
 

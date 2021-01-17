@@ -12,6 +12,7 @@
 * add a metric(to check no of calls/ response times/status codes/ failure rates )git 
 * ship metric to prometheus/grafana
 * docker compose postgres
-* check any api queries
+* get Current time API from Postgres Database (HikariCP)
 * add typesafe config
 * db credentials read from config
+* create multi-part POST API endpoint (upload a file to postgres)
