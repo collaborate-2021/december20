@@ -12,7 +12,7 @@
 
 ## Running docker 
 * Command line
- `docker run -p 8083:8080 demo`
+ `docker run -p 8080:8080 rohitanand650/demo`
 
 * Docker-compose
 
@@ -121,7 +121,7 @@ Deployment
     
 ##Prometheus
 
-* Spring Boot Micrometer - https://www.mokkapps.de/blog/monitoring-spring-boot-application-with-micrometer-prometheus-and-grafana-using-custom-metrics/
+* [Spring Boot Micrometer](https://www.mokkapps.de/blog/monitoring-spring-boot-application-with-micrometer-prometheus-and-grafana-using-custom-metrics/)
 
 
 

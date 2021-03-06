@@ -15,7 +15,7 @@ public class DateResource {
     // use spring dependency injection
 
     DateRepository dateRepository;
-    public DateResource(){
+    public DateResource() throws SQLException {
         this.dateRepository = new DateRepository();
     }
     @RequestMapping("/current-date")
